@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import styles from './App.module.css'
 import Test from "./Test";
 import { Title } from './Components'
+import Bootstrap from "./Bootstrap";
+import './tailwind.css'
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
           <img src={logo} alt="" />
         </>
       )}
+      <Bootstrap  />
     </div> 
   );
 }
