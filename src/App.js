@@ -4,6 +4,7 @@ import styles from './App.module.css'
 import Test from "./Test";
 import { Title } from './Components'
 import Bootstrap from "./Bootstrap";
+import Tailwind from "./Tailwind";
 import './tailwind.css'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         </>
       )}
       <Bootstrap  />
+      <Tailwind  />
     </div> 
   );
 }
