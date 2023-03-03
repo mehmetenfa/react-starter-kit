@@ -5,7 +5,8 @@ import Test from "./Test";
 import { Title } from './Components'
 import Bootstrap from "./Bootstrap";
 import Tailwind from "./Tailwind";
-import './tailwind.css'
+// import './tailwind.css'
+import './style.scss'
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
     <div className={styles.App}>
       <Title>{process.env.NODE_ENV}</Title>
       <Title theme='dark'>{process.env.NODE_ENV}</Title>
-      <p>
+      <p className="env">
         {process.env.REACT_APP_API_URL}
+        <span>test</span>
       </p>
       <Test />
       {process.env.NODE_ENV === "production" && (
