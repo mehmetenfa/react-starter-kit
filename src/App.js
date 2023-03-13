@@ -1,5 +1,6 @@
 import { createElement } from "react";
 import Button from "./components/Button";
+import Tab from "./components/Tab";
 
 import "./tailwind.css";
 
@@ -20,10 +21,23 @@ function App() {
   return (
     <main>
       <div style={{padding: 20}}>
-      <Button text='Buton Örneği' />
-      <Button text='Buton Örneği' variant='success' />
-      <Button text='Buton Örneği' variant='danger' />
-      <Button text='Buton Örneği' variant='warning' />
+        <Tab />
+      </div>
+      
+      <div style={{padding: 20}}>
+      <Button>
+        Buton Örneği
+      </Button>
+      <Button variant="success">
+        Buton Örneği
+      </Button>
+      <Button variant="danger">
+        Buton Örneği
+      </Button>
+      <Button variant="warning">
+        Buton Örneği
+      </Button>
+      
       </div>
       <h1 tabIndex="3" style={{ color: "red", backgroundColor: "yellow" }}>
         mehmetenfa.com

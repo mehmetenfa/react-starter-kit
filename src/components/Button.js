@@ -1,6 +1,7 @@
 import classNames from "classnames";
 
-function Button({ text, variant = "default" }) {
+function Button({ children, variant = "default" }) {
+    console.log(children);
   return (
     <button className={classNames({
         "p-4 h-10 flex items-center bg-gray-100 rounded": true,
@@ -9,7 +10,7 @@ function Button({ text, variant = "default" }) {
         'bg-red-600 text-white': variant === 'danger',
         'bg-yellow-300 tet-yellow-800': variant === 'warning'
     })}>
-      {text}
+      {children}
     </button>
   );
 }
