@@ -1,9 +1,15 @@
-function Tab() {
+function Tab({ children }) {
     return (
         <div>
-            tab içeriği
+           {children}
         </div>
     )
 }
 
-export default Tab;
+Tab.Panel = function({children}) {
+    return (
+        <div>{children}</div>
+    )
+}
+
+export default Tab; 

@@ -21,7 +21,11 @@ function App() {
   return (
     <main>
       <div style={{padding: 20}}>
-        <Tab />
+        <Tab>
+          <Tab.Panel>1. tab</Tab.Panel>
+          <Tab.Panel>2. tab</Tab.Panel>
+          <Tab.Panel>3. tab</Tab.Panel>
+        </Tab>
       </div>
       
       <div style={{padding: 20}}>
