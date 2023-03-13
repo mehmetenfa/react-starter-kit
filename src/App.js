@@ -19,7 +19,12 @@ function App() {
 
   return (
     <main>
-      <Button />
+      <div style={{padding: 20}}>
+      <Button text='Buton Örneği' />
+      <Button text='Buton Örneği' variant='success' />
+      <Button text='Buton Örneği' variant='danger' />
+      <Button text='Buton Örneği' variant='warning' />
+      </div>
       <h1 tabIndex="3" style={{ color: "red", backgroundColor: "yellow" }}>
         mehmetenfa.com
       </h1>
